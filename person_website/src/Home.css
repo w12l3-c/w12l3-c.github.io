@@ -1,0 +1,167 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes slidingGradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+  
+.home {
+    background: linear-gradient(270deg, #003cff, #3500d2, #7116df, #3500d2, #003cff);
+    background-size: 200% 200%;
+    animation: slidingGradient 10s linear infinite alternate;
+    transition: 0.5s ease;
+}
+
+.home-banner {
+    text-align: left;
+    padding: 15vh 10vw;
+    margin: 0px;
+}
+
+.home-banner h1 {
+    text-decoration: none;
+    font-size: 45px;
+    color: #f2eafb;
+    transition: 0.02s;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.blink {
+    animation: blink 0.75s infinite;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+  }
+  
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.home-experience {
+    text-align: left;
+    padding: 15vh 10vw;
+    margin: 0px;
+    background-color: rgb(240, 248, 255);
+}
+
+.home-experience h4 {
+    text-decoration: none;
+    color: #6709ff;
+    font-size: 17px;
+    transition: 0.02s;
+}
+
+.home-experience-button{
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #7b00ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-experience-button:hover {
+    background-color: #2d00b3;
+    padding: 10px 50px;
+    transition: 0.5s ease;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flex-container > div {
+    padding-right: 5vw;
+}
+
+.margin-l {
+    margin-left: 10px;
+}
+
+.circular-image {
+    border-radius: 50%; /* makes the image circular */
+    width: 20vw; /* adjust as needed */
+    height: 20vw; /* adjust as needed */
+    overflow: hidden; /* hides the parts of the image outside the circle */
+    animation: spin 10s linear infinite; /* makes the image spin */
+}
+  
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.home-hobbies {
+    text-align: left;
+    padding: 15vh 10vw;
+    margin: 0px;
+    transition: 0.02s;
+}
+
+.home-hobbies h4 {
+    text-decoration: none;
+    color: #f8f3ff;
+    font-size: 17px;
+    transition: 0.02s;
+}
+
+.home-hobbies-button{
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: rgb(112, 23, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-hobbies-button:hover {
+    background-color: #d000ff;
+    color: white;
+    padding: 10px 50px;
+    transition: 0.5s ease;
+}
+
+.flex-container-hobbies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-container-hobbies > div {
+    padding-right: 0vw;
+}
+
+.rounded-rectangle {
+    border-radius: 10px;
+    width: 40vw;
+    height: 30vw;
+    overflow: hidden;
+    justify-content: space-between;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.adjust-center {
+    justify-content: center;
+}
