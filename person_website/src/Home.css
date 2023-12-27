@@ -12,6 +12,7 @@ html {
     background-size: 200% 200%;
     animation: slidingGradient 10s linear infinite alternate;
     transition: 0.5s ease;
+
 }
 
 .home-banner {
@@ -36,15 +37,24 @@ html {
 .blink {
     animation: blink 0.75s infinite;
 }
-
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-  }
   
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.fade-out {
+    animation: fadeOut 2s ease-in-out forwards;
 }
 
 .home-experience {
@@ -110,7 +120,7 @@ html {
 
 .home-hobbies {
     text-align: left;
-    padding: 15vh 10vw;
+    padding: 8vh 10vw;
     margin: 0px;
     transition: 0.02s;
 }
@@ -164,4 +174,9 @@ html {
 
 .adjust-center {
     justify-content: center;
+    margin-left: auto;
+}
+
+.image-container{
+    margin-left: auto;
 }

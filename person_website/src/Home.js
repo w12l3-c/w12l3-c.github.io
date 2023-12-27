@@ -8,11 +8,16 @@ import violin from './assets/home_slider/violin.jpeg';
 import badminton from './assets/home_slider/badminton.jpeg';
 import drawing from './assets/home_slider/drawing.jpeg';
 
+import Footer from './pages/Footer.js';
+import Navbar from './pages/Navbar.js';
+
 function Home() {
     const [text, setText] = useState('');
     const fullText = 'Hi My Name is Wallace';
-    const [isVisible, setIsVisible] = useState({});
-    const divRefs = useRef([]);
+    
+    const bannerRef = useRef();
+    const experienceRef = useRef();
+    const hobbiesRef = useRef();
 
     const images = [violin, badminton, drawing];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -38,10 +43,11 @@ function Home() {
         }, 10000);
     
         return () => clearInterval(timer);
-      }, [currentImageIndex]);
+    }, [currentImageIndex]);
 
     return (
         <div className='home'>
+            <Navbar />
             <div className='home-banner fade-in'>
                 <h1>{text}<span className="blink">_</span></h1>
             </div>
@@ -64,6 +70,7 @@ function Home() {
                     <img src={ images[currentImageIndex] } alt="Description" className="rounded-rectangle" style={{opacity}}/>
                 </div>
             </div>
+        <Footer />
         </div>
     );
 }
