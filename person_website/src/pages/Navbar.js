@@ -5,13 +5,22 @@ import menu from '../assets/sidebar/menu_FILL0_wght400_GRAD0_opsz24.svg';
 import close from '../assets/sidebar/close_FILL0_wght400_GRAD0_opsz24.svg';
 
 
-
 function Navbar(){
     const [style, setStyle] = useState('noSidebar');
 
     const showSidebar = () => {
         if (style !== "sidebar") setStyle("sidebar");
         else setStyle("noSidebar");
+    };
+
+    const [darkMode, setDarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        if (darkMode !== true){
+            setDarkMode(true);
+        } else {
+            setDarkMode(false);
+        }
     };
 
     return (
@@ -28,8 +37,11 @@ function Navbar(){
                     </li>
                     <li><a href="/wal">Home</a></li>
                     <li><a href="/wal/Experience">Experience</a></li>
+                    <li><a href="/wal/Projects">Projects</a></li>
                     <li><a href="/wal/Hobbies">Hobbies</a></li>
+                    
                 </ul>
+                
             </nav>
             <nav>
                 <ul className={!style}>

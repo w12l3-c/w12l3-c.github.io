@@ -1,0 +1,286 @@
+html{
+    scroll-behavior: smooth;
+}
+
+@keyframes slidingGradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes spin-clock {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes spin-counterclock {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
+.main1{
+    background: rgb(41, 41, 41);
+}
+
+.Work{
+    background: rgb(41, 41, 41);
+    color: white;
+}
+
+.Work h1{
+    color: white;
+    text-align: left;
+    padding: 5vw;
+    padding-bottom: 3vw;
+    padding-top: 3vw;
+    font-size: 45px;
+}
+
+.work-flex{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; */
+    padding: 0vh 8vw;
+}
+
+/* Your CSS file or style block */
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    padding-bottom: 30px;
+  }
+  
+.vertical-line {
+    position: relative;
+    width: 7px;
+    background-color: #ffffff; /* Adjust the color as needed */
+    border-radius: 3px;
+    height: auto;
+    box-shadow: 0 0 10px #290049;
+  }
+  
+.horizontal-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #333; 
+}
+
+.box {
+    width: 80vw;
+    height: auto;
+    background: linear-gradient(90deg, #1d03e3, #5712b1, #1b02d8);
+    /* background: linear-gradient(270deg, #f1f1f1, #b8b8b8, #f1f1f1); */
+    background-size: 200% 200%;
+    border-radius: 5px;
+    animation: slidingGradient 3s linear infinite alternate;
+    transition: 0.5s ease;
+    text-align: left;
+    color: rgb(233, 233, 233);
+    align-items: center;
+    box-shadow: 0 0 15px #290049;
+    transition: 1s ease;
+}
+
+.box:hover{
+    box-shadow: inset 0 0 10px #290049;
+    transition: 1s ease;
+}
+
+.box h3{
+    padding-left: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 15px;
+    margin: 0px;
+    font-size: 25px;
+}
+
+.box h4{
+    padding-left: 2vw;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.box h5{
+    padding-top: -10px;
+    padding-left: 2vw;
+    margin: 0px;
+    font-size: 13px;
+    color: #f09696;
+}
+
+.box li{
+    padding-left: 2vw;
+    font-size: 15px;
+}
+
+.box img {
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.rounded-rectangle{
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: space-between;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: inset #43009a 0px 0px 10px;
+}
+
+.Education{
+    background-color: rgb(234, 234, 234);
+    height: auto;
+    width: 100%;
+}
+
+.Education h1{
+    color: rgb(112, 23, 255);
+    text-align: left;
+    padding: 5vw;
+    padding-bottom: 2vw;
+    padding-top: 7vw;
+    font-size: 45px;
+}
+
+.edu-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    padding-top: 5vw;
+    padding-bottom: 7vw;
+}
+
+.circular{
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+    background-color: rgb(149, 0, 255);
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0 0 10px #4e4e4e;
+    
+}
+
+.left{
+    left: 5vw;
+    animation: spin-counterclock 10s linear infinite;
+}
+
+.right{
+    right: 5vw;
+    animation: spin-clock 10s linear infinite;
+}
+
+.circular img{
+    object-fit: fill;
+    width: auto;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content{
+    height: auto;
+    width: 80%;
+    margin-left: auto;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    text-align: left;
+    color: rgb(112, 23, 255);
+    box-shadow: inset 0 0 10px #4e4e4e;
+    transition: 1s ease;
+}
+
+.content h3{
+    padding-left: 7.5vw;
+    padding-top: 2vw;
+    color: black;
+    margin-bottom: 1vw;
+    font-size: 30px;
+    padding-right: 2vw;
+}
+
+.content h4{
+    padding-left: 7.5vw;
+    margin-top: 0px;
+    padding-top: -10px;
+    margin-bottom: 0px;
+    font-size: 21px;
+    padding-right: 2vw;
+}
+
+.content h5{
+    padding-left: 7.5vw;
+    margin: 0px;
+    font-size: 19px;
+    color: #3e17ff;
+    padding-bottom: 0.5vw;
+    padding-right: 2vw;
+}
+
+.content ul{
+    padding-left: 10vw;
+    font-size: 17px;
+    list-style: circle;
+    color: rgb(75, 6, 145);
+    padding-bottom: 2.5vw;
+    padding-right: 2vw;
+}
+
+.content-right{
+    height: auto;
+    width: 80%;
+    margin-right: auto;
+    background: linear-gradient(270deg, #6800ef, #002ac2, #6f00ff);
+    background-size: 200% 200%;
+    border-radius: 20px;
+    animation: slidingGradient 5s linear infinite alternate;
+    transition: 0.5s ease;
+    text-align: left;
+    color: rgb(236, 236, 236);
+    box-shadow: inset 0 0 10px #1c003f;
+    transition: 1s ease;
+}
+
+.content-right h3{
+    padding-left: 2.5vw;
+    padding-top: 2vw;
+    color: white;
+    margin-bottom: 1vw;
+    font-size: 30px;
+    padding-right: 5vw;
+}
+
+.content-right h4{
+    padding-left: 2.5vw;
+    margin-top: 0px;
+    padding-top: -10px;
+    margin-bottom: 0px;
+    color: #fff8f8;
+    font-size: 21px;
+    padding-right: 5vw;
+}
+
+.content-right h5{
+    padding-left: 2.5vw;
+    margin: 0px;
+    font-size: 19px;
+    color: #ff9100;
+    padding-bottom: 0.5vw;
+    padding-right: 5vw;
+}
+
+.content-right ul{
+    padding-left: 5vw;
+    font-size: 17px;
+    list-style: circle;
+    color: rgb(226, 226, 226);
+    padding-bottom: 2.5vw;
+    padding-right: 5vw;
+}

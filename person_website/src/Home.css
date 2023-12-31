@@ -12,7 +12,6 @@ html {
     background-size: 200% 200%;
     animation: slidingGradient 10s linear infinite alternate;
     transition: 0.5s ease;
-
 }
 
 .home-banner {
@@ -61,7 +60,7 @@ html {
     text-align: left;
     padding: 15vh 10vw;
     margin: 0px;
-    background-color: rgb(240, 248, 255);
+    background-color: rgb(231, 238, 244);
 }
 
 .home-experience h4 {
@@ -98,7 +97,7 @@ html {
 }
 
 .flex-container > div {
-    padding-right: 5vw;
+    padding-right: 0vw;
 }
 
 .margin-l {
@@ -111,6 +110,7 @@ html {
     height: 20vw; /* adjust as needed */
     overflow: hidden; /* hides the parts of the image outside the circle */
     animation: spin 10s linear infinite; /* makes the image spin */
+    box-shadow: 0px 0px 10px rgba(119, 0, 255, 0.368);
 }
   
 @keyframes spin {
@@ -177,6 +177,6 @@ html {
     margin-left: auto;
 }
 
-.image-container{
+.image-container {
     margin-left: auto;
 }

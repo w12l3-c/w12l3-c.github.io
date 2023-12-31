@@ -5,8 +5,12 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+
 import Home from './Home';
 import Experience from './Experience';
+import Hobbies from './Hobbies';
+import Projects from './Projects';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -36,6 +40,8 @@ function App() {
         <Routes>
           <Route path="/wal" element={<Home />} />
           <Route path="/wal/Experience" element={<Experience />} />
+          <Route path="/wal/Projects" element={<Projects />} />
+          <Route path="/wal/Hobbies" element={<Hobbies />} />
         </Routes>
       </BrowserRouter>
     </div>

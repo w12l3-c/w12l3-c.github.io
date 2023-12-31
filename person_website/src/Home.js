@@ -13,7 +13,7 @@ import Navbar from './pages/Navbar.js';
 
 function Home() {
     const [text, setText] = useState('');
-    const fullText = 'Hi My Name is Wallace';
+    const fullText = 'Hi I am Wallace';
     
     const bannerRef = useRef();
     const experienceRef = useRef();
