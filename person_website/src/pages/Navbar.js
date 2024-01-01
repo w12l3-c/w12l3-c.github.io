@@ -36,9 +36,9 @@ function Navbar(){
                         </a>
                     </li>
                     <li><a href="/wal">Home</a></li>
-                    <li><a href="/wal/Experience">Experience</a></li>
-                    <li><a href="/wal/Projects">Projects</a></li>
-                    <li><a href="/wal/Hobbies">Hobbies</a></li>
+                    <li><a href="/Experience">Experience</a></li>
+                    <li><a href="/Projects">Projects</a></li>
+                    <li><a href="/Hobbies">Hobbies</a></li>
                     
                 </ul>
                 

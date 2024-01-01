@@ -54,19 +54,19 @@ function Home() {
             <div className='home-experience fade-in flex-container '>
                 <div>
                     <h4>Biomedical Engineering Student at University of Waterloo</h4>
-                    <Link to="/wal/Experience"><button className='home-experience-button'>CV</button></Link>
+                    <Link to="/Experience"><button className='home-experience-button'>CV</button></Link>
                     <a href={ pdf } target="_blank" rel="noopener noreferrer" className='home-experience-button margin-l'>Resume</a>
                 </div>
                 <div className='adjust-center'>
-                    <Link to="/wal/Experience"><img src={ logo } alt="Description" className="circular-image" /></Link>
+                    <Link to="/Experience"><img src={ logo } alt="Description" className="circular-image" /></Link>
                 </div>
             </div>
             <div className='home-hobbies fade-in flex-container-hobbies'>
                 <div>
                     <h4>Hobbies</h4>
-                    <button className='home-hobbies-button'>Here</button>
+                    <Link to='/Hobbies'><button className='home-hobbies-button'>Here</button></Link>
                 </div>
-                <div className='image-container'>
+                <div className='image-containers'>
                     <img src={ images[currentImageIndex] } alt="Description" className="rounded-rectangle" style={{opacity}}/>
                 </div>
             </div>

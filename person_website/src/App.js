@@ -1,10 +1,6 @@
 import React from 'react';
 import { render } from "react-dom";
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes, BrowserRouter } from 'react-router-dom';
 
 import Home from './Home';
 import Experience from './Experience';
@@ -39,11 +35,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/wal" element={<Home />} />
-          <Route path="/wal/Experience" element={<Experience />} />
-          <Route path="/wal/Projects" element={<Projects />} />
-          <Route path="/wal/Hobbies" element={<Hobbies />} />
+          <Route path="/Experience" element={<Experience />} exact />
+          <Route path="/Projects" element={<Projects />} exact />
+          <Route path="/Hobbies" element={<Hobbies />} exact />
         </Routes>
       </BrowserRouter>
+      
     </div>
   );
 }

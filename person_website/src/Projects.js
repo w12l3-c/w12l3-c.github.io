@@ -10,11 +10,11 @@ import placeholder from './assets/placeholder.jpeg';
 
 import blood from './assets/projects/blood.jpeg';
 import emg from './assets/projects/emg.JPG';
-import breast from './assets/projects/breast cancer.png';
-import brain from './assets/projects/brain.png';
+import breast from './assets/projects/breast.jpeg';
+import brain from './assets/projects/brain.avif';
 import stable from './assets/projects/stable.webp';
 import doorlock from './assets/projects/face.jpeg';
-import pneumonia from './assets/projects/pneumonia.jpeg';
+import pneumonia from './assets/projects/lung.avif';
 import protein from './assets/projects/protein.webp';
 import heart from './assets/projects/heart.jpg';
 import row from './assets/projects/row.jpeg';

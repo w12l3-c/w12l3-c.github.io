@@ -124,6 +124,11 @@ html{
     margin-bottom: 20px;
 }
 
+.box img:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
 .rounded-rectangle{
     border-radius: 5px;
     overflow: hidden;
@@ -164,7 +169,12 @@ html{
     overflow: hidden;
     position: absolute;
     box-shadow: 0 0 10px #4e4e4e;
-    
+}
+
+.circular:hover{
+    width: 26vw;
+    height: 26vw;
+    transition: 1s ease;
 }
 
 .left{
