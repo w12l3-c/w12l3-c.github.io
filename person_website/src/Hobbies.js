@@ -7,7 +7,7 @@ import './Hobbies.css';
 
 function Hobbies() {
     return(
-        <div>
+        <div className="main">
             <Navbar />
             <h1>Hobbies</h1>
             <p>
