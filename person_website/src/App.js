@@ -17,9 +17,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="wal" element={<Home />} />
-          <Route path="Experience" element={<Experience />} exact />
-          <Route path="Projects" element={<Projects />} exact />
-          <Route path="Hobbies" element={<Hobbies />} exact />
+          <Route path="Experience" element={<Experience />} />
+          <Route path="Projects" element={<Projects />} />
+          <Route path="Hobbies" element={<Hobbies />} />
         </Routes>
       </Router>
     </div>
