@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from "react-dom";
-import { BrowserRouter as Router, Route, Link, Routes, BrowserRouter } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './Home';
 import Experience from './Experience';
@@ -14,14 +14,14 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
-      <BrowserRouter>
+      <Router>
         <Routes>
-          <Route path="/wal" element={<Home />} />
-          <Route path="/Experience" element={<Experience />} exact />
-          <Route path="/Projects" element={<Projects />} exact />
-          <Route path="/Hobbies" element={<Hobbies />} exact />
+          <Route path="wal" element={<Home />} />
+          <Route path="Experience" element={<Experience />} exact />
+          <Route path="Projects" element={<Projects />} exact />
+          <Route path="Hobbies" element={<Hobbies />} exact />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

@@ -29,7 +29,7 @@ function Navbar(){
             <nav>
                 <ul className={style}>
                     <li onClick={showSidebar}>
-                        <a href='#'>
+                        <a href=''>
                             {style === "sidebar"
                                 ? <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="rgb(112, 23, 255)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                                 : ''
