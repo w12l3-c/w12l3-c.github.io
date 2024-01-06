@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 import menu from '../assets/sidebar/menu_FILL0_wght400_GRAD0_opsz24.svg';
@@ -35,10 +36,10 @@ function Navbar(){
                             }
                         </a>
                     </li>
-                    <li><a href="/wal">Home</a></li>
-                    <li><a href="/Experience">Experience</a></li>
-                    <li><a href="/Projects">Projects</a></li>
-                    <li><a href="/Hobbies">Hobbies</a></li>
+                    <li><Link to="/wal">Home</Link></li>
+                    <li><Link to="/Experience">Experience</Link></li>
+                    <li><Link to="/Projects">Projects</Link></li>
+                    <li><Link to="/Hobbies">Hobbies</Link></li>
                     
                 </ul>
                 
