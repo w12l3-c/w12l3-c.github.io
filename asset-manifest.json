@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wal/static/css/main.9ae79f8d.css",
-    "main.js": "/wal/static/js/main.604b7e34.js",
+    "main.js": "/wal/static/js/main.0bac577b.js",
     "static/js/787.f450686f.chunk.js": "/wal/static/js/787.f450686f.chunk.js",
     "static/media/sunnybrook.JPG": "/wal/static/media/sunnybrook.dc767249213a7b01bf62.JPG",
     "static/media/row.jpeg": "/wal/static/media/row.eead63a87af5764e133d.jpeg",
@@ -33,11 +33,11 @@
     "static/media/close_FILL0_wght400_GRAD0_opsz24.svg": "/wal/static/media/close_FILL0_wght400_GRAD0_opsz24.1ded1e99216871d2a3aec0714440eb62.svg",
     "static/media/menu_FILL0_wght400_GRAD0_opsz24.svg": "/wal/static/media/menu_FILL0_wght400_GRAD0_opsz24.0d3c31af19b9c297e9457042ec495ba1.svg",
     "main.9ae79f8d.css.map": "/wal/static/css/main.9ae79f8d.css.map",
-    "main.604b7e34.js.map": "/wal/static/js/main.604b7e34.js.map",
+    "main.0bac577b.js.map": "/wal/static/js/main.0bac577b.js.map",
     "787.f450686f.chunk.js.map": "/wal/static/js/787.f450686f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ae79f8d.css",
-    "static/js/main.604b7e34.js"
+    "static/js/main.0bac577b.js"
   ]
 }
